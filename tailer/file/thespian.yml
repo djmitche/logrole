@@ -1,0 +1,8 @@
+actors:
+  Tailer:
+    mailboxes:
+      poll:
+        kind: ticker
+        import: github.com/djmitche/thespian/mailbox
+        type: Ticker
+
