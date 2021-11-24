@@ -3,6 +3,8 @@ github.com/benbjohnson/clock v1.3.0/go.mod h1:J11/hYXuz8f4ySSvYwY0FKfm+ezbsZBKZx
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/djmitche/thespian v0.0.0-20211122212721-b2a81b42b725 h1:KEFajPK6tjvy6LWvbJamqkcJcOyxnQsJ6PHIZ+0X7Kg=
 github.com/djmitche/thespian v0.0.0-20211122212721-b2a81b42b725/go.mod h1:nnKYlkD606U49AIFtR3TTCllp0er6Evpdoblr28PH9s=
+github.com/djmitche/thespian v0.0.1 h1:ofk07Asj2TbxkcVBHUwjjRnWJIsCTk+A31LScG31rfg=
+github.com/djmitche/thespian v0.0.1/go.mod h1:nnKYlkD606U49AIFtR3TTCllp0er6Evpdoblr28PH9s=
 github.com/iancoleman/strcase v0.2.0 h1:05I4QRnGpI0m37iZQRuskXh+w77mr6Z41lwQzuHLwW0=
 github.com/iancoleman/strcase v0.2.0/go.mod h1:iwCmte+B7n89clKwxIoIXy/HfoL7AsD47ZCWhYzw7ho=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=

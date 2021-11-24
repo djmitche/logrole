@@ -3,6 +3,5 @@ actors:
     mailboxes:
       rawLogMessage:
         kind: simple
-        import: github.com/djmitche/logrole/common
-        type: RawMessage
+        type: github.com/djmitche/logrole/common.RawMessage
         message-type: string

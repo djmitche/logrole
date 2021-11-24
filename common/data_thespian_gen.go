@@ -2,6 +2,8 @@
 
 package common
 
+import ()
+
 // DataMailbox is a mailbox for messages of type []byte.
 type DataMailbox struct {
 	// C is the bidirectional channel over which messages will be transferred.  If

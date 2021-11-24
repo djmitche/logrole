@@ -3,11 +3,9 @@ actors:
     mailboxes:
       logMessage:
         kind: simple
-        import: github.com/djmitche/logrole/common
-        type: Message
-        message-type: import2.Message # hmm...
+        type: github.com/djmitche/logrole/common.Message
+        message-type: github.com/djmitche/logrole/common.Message
       flush:
         kind: ticker
-        import: github.com/djmitche/thespian/mailbox
-        type: Ticker
+        type: github.com/djmitche/thespian/mailbox.Ticker
 

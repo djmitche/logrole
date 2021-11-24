@@ -2,6 +2,8 @@
 
 package common
 
+import ()
+
 // RawMessageMailbox is a mailbox for messages of type string.
 type RawMessageMailbox struct {
 	// C is the bidirectional channel over which messages will be transferred.  If

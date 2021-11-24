@@ -3,6 +3,5 @@ actors:
     mailboxes:
       logData:
         kind: simple
-        import: github.com/djmitche/logrole/common
-        type: Data
+        type: github.com/djmitche/logrole/common.Data
         message-type: "[]byte"

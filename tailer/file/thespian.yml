@@ -3,6 +3,5 @@ actors:
     mailboxes:
       poll:
         kind: ticker
-        import: github.com/djmitche/thespian/mailbox
-        type: Ticker
+        type: github.com/djmitche/thespian/mailbox.Ticker
 

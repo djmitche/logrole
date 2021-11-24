@@ -2,6 +2,8 @@
 
 package common
 
+import ()
+
 // MessageBatchMailbox is a mailbox for messages of type []Message.
 type MessageBatchMailbox struct {
 	// C is the bidirectional channel over which messages will be transferred.  If
