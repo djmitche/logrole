@@ -1,0 +1,8 @@
+actors:
+  SplitStream:
+    mailboxes:
+      logData:
+        kind: simple
+        import: github.com/djmitche/logrole/common
+        type: Data
+        message-type: "[]byte"

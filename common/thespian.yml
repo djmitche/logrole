@@ -1,0 +1,13 @@
+mailboxes:
+  Data:
+    kind: simple
+    message-type: "[]byte"
+  RawMessage:
+    kind: simple
+    message-type: "string"
+  Message:
+    kind: simple
+    message-type: "Message"
+  MessageBatch:
+    kind: simple
+    message-type: "[]Message"

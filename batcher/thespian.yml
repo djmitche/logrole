@@ -1,0 +1,13 @@
+actors:
+  Batcher:
+    mailboxes:
+      logMessage:
+        kind: simple
+        import: github.com/djmitche/logrole/common
+        type: Message
+        message-type: import2.Message # hmm...
+      flush:
+        kind: ticker
+        import: github.com/djmitche/thespian/mailbox
+        type: Ticker
+

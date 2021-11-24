@@ -1,3 +1,4 @@
+// Package file implements a tailer that will follow a single on-disk file.
 package file
 
 //go:generate go run github.com/djmitche/thespian/cmd/thespian generate
@@ -8,6 +9,7 @@ import (
 	"os"
 	"time"
 
+	"github.com/djmitche/logrole/common"
 	"github.com/djmitche/thespian"
 )
 
@@ -18,15 +20,17 @@ const (
 type tailer struct {
 	tailerBase
 
+	sink     common.StreamDataSink
 	filename string
 	file     *os.File
 	buf      []byte
 }
 
-func NewTailer(rt *thespian.Runtime, filename string) *TailerTx {
+func NewTailer(rt *thespian.Runtime, filename string, sink common.StreamDataSink) *TailerTx {
 	return TailerBuilder{
 		tailer{
 			filename: filename,
+			sink:     sink,
 		},
 	}.spawn(rt)
 }
@@ -72,7 +76,7 @@ func (t *tailer) tryRead() {
 		if n == 0 {
 			break
 		}
-		log.Printf("Got %d bytes", n) // TODO: send somewhere
+		t.sink.LogData(t.buf[:n])
 		t.buf = nil
 	}
 }

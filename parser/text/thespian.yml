@@ -1,0 +1,8 @@
+actors:
+  Parser:
+    mailboxes:
+      rawLogMessage:
+        kind: simple
+        import: github.com/djmitche/logrole/common
+        type: RawMessage
+        message-type: string
