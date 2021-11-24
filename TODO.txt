@@ -1,0 +1,5 @@
+## Minor
+
+* Data sources might have a few forms:
+  * tailer -> streamsplit -> ..
+  * datagram input -> ..

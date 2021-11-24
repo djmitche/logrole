@@ -1,0 +1,7 @@
+actors:
+  Tailer:
+    mailboxes:
+      tick:
+        kind: ticker
+        type: github.com/djmitche/thespian/mailbox.Ticker
+

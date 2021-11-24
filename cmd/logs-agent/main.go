@@ -8,6 +8,7 @@ import (
 	"github.com/djmitche/logrole/parser/text"
 	"github.com/djmitche/logrole/splitstream/utf8"
 	"github.com/djmitche/logrole/tailer/file"
+	"github.com/djmitche/logrole/tailer/random"
 	"github.com/djmitche/thespian"
 )
 
@@ -25,15 +26,15 @@ func main() {
 
 	b := batcher.New(rt, &sink{})
 	{
-		parser := text.NewParser(rt, b, "test", []string{})
+		parser := text.NewParser(rt, b, "test.log", []string{})
 		ss := utf8.NewSplitStream(rt, parser)
 		_ = file.NewTailer(rt, "/tmp/test.log", ss)
 	}
 
 	{
-		parser := text.NewParser(rt, b, "test2", []string{})
+		parser := text.NewParser(rt, b, "rand", []string{})
 		ss := utf8.NewSplitStream(rt, parser)
-		_ = file.NewTailer(rt, "/tmp/test2.log", ss)
+		_ = random.NewTailer(rt, ss)
 	}
 
 	rt.Run()
